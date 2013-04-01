@@ -1621,9 +1621,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);
 *margin-left:0;
 }
 .btn:hover {
-	color:#333333;
-	text-decoration:none;
-	background-position:0 -15px;
+	background-position: 0 -29px;
+    color: white;
+    text-decoration: none;
+    transition: background-position 0.1s linear 0s;
 	-webkit-transition:background-position 0.1s linear;
 	-moz-transition:background-position 0.1s linear;
 	-o-transition:background-position 0.1s linear;

@@ -11,36 +11,47 @@
             #help .iconset, #about .iconset{
                 margin-left: 13%;
             }
+           #help .iconset, #about .iconset .span4 .services .serv_icon img{
+                height: 120px;
+            }
             #home a.btn{
-                margin-bottom: 2%;
-                margin-top: 2%;
+                margin-bottom: 1.5em;
+                margin-top: 1.5em;
             }
             #work .container{
-                background: url("../images/rb2.png") no-repeat scroll 0 0 transparent;
-                color: white;
+                background: url("../images/work-bg.jpg") no-repeat scroll 0 0 transparent;
                 margin-bottom: 5%;
             }
 }
 @media only screen and (min-width: 1000px){
             #work .container{
-                background: url("../images/rb2.png") no-repeat scroll 0 0 transparent;
+                background: url("../images/work-bg.jpg") no-repeat scroll 0 0 transparent;
                 color: white;
                 margin-bottom: 5%;
             }
-            #home a.btn{
-                margin-bottom: 4%;
-                margin-top: 4%;
+           #home a.btn{
+                margin-bottom: 1.5em;
+                margin-top: 1.5em;
             }
             .banner_nav{
                 padding-right:20px; 
                 padding-left:20px;
+                font-family: 'HelveticaMed', Open Sans;
+                font-size: 1.2em
             }
             #home .title {
-                font-size: 25px;
+                font-size: 1.7em;
+                position: relative;
+                top: 1.2em;
                 font-weight: 100;
+              font-family: 'HelveticaMed', Open Sans;
             }
             #home .content {
-                font-size: 22px;
+               font-size: 1.7em;
+                position: relative;
+                top: 0.5em;
+                font-weight: 100;
+              font-family: 'HelveticaMed', Open Sans;
             }
             #contact-form{
              margin-left: 17%;
@@ -75,13 +86,17 @@
             #help .iconset, #about .iconset{
                 margin-left: 12%;
             }
+            #help .iconset .span4 .services .serv_icon img{
+                height: 120px;
+            }
             #work .container{
             width: 100%;
-            	background-size: cover;
+            color: white;
+        	background: url("../images/work-bg.jpg") no-repeat scroll 0 0 transparent;
             }
-                #contact{
-                    margin-top: 17%;
-                }  
+            #contact{
+                margin-top: 17%;
+            }     
             nav select {
             display: none;
             }
@@ -89,15 +104,29 @@
             h3{
                 font-size: 14px;
             }
+            .pad_icon{
+                /*margin-left: 31% !important;*/
+               margin-left: 28% ;   
+             -webkit-margin-left: 28% ;
+             -ms-margin-left: 28%;
+             
+            }
+            #contact{
+                    margin-top: 17%;
+                }
             #home h1{
                 padding-bottom: 40px;
                 padding-top: 40px;
                 font-size: 120px;
-                font-weight: 500;
+                 font-family: 'HelveticaBold', Open sans;
+                 text-shadow: 0 -1px 1px #000000;
+                filter: dropshadow(color=#000000, offx=0, offy=-1);
+           
             }
             .span12 .btn{
-                 margin-bottom: 10px;
-                 width: 22%;
+                  margin-bottom: 6px;
+                 width: 26%;
+                 padding: 0 8px;
             }
 
 }
@@ -139,10 +168,11 @@
             	display:none;
             }
             #work .container{
-            width: 100%;
-            	background-size: cover;
+                color: white;
+                width: 100%;
+            	background: url("../images/work-bg.jpg") no-repeat scroll 0 0 transparent;
             }
-                  article{
+            article{
             width: 100%!important;
             }
             .span12{
@@ -380,4 +410,9 @@
                 display: block;
                 text-align: center !important;
             }
+}
+/* go to top button */
+a.go-to-top {
+right: 15px;
+bottom: 120px;
 }

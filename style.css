@@ -163,8 +163,8 @@ a:hover{
 	padding-bottom: 40px;
 }
 #work .container{
-	background: url("images/work-bg.jpg") center center;
 	color: white;
+	background: url("images/work-bg.jpg") no-repeat scroll 0 0 transparent;
 	margin-bottom: 5%;
 }
 .pad_icon{
@@ -184,11 +184,11 @@ a:hover{
     font-size: 0.9em;
 }
 .pad_icon .span4 img{
-	 margin-left: 21%;
+	 margin-left: 26%;
 }
 .pad_icon .content{
-	width :140px !important;
-	margin-left: 21% !important;
+	 margin-left: 0 !important;
+    width: 200px !important;
 }
 #work1,#work2,#work3,#map1,#map2,#submit{
 	cursor:pointer;
@@ -426,5 +426,8 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 #submit:hover{
 background-color:#b4b4b4 !important;
 color: #333;
+}
+#work .pad_icon{
+	margin-left: 27%;
 }
 /* changes by mittal end */
