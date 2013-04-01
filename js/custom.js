@@ -106,7 +106,7 @@ $('#submit').click(function(){
 			data="name=" + name+ "&email=" + email+ "&subject="+ $('#subject').val()+ "&message=" + $('#message').val();
 			alert(data);
 				$.ajax({                   
-				url: '/sendEmail.php',
+				url: 'sendEmail.php',
 				data: data,
 				dataType: "html",
 				type:'post',

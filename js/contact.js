@@ -5,7 +5,7 @@ $(function() {
     var paraTag = $('input#submit').parent('p');
 	
     $(paraTag).children('input').remove();
-    $(paraTag).append('<input type="button" name="submit" id="submit" value="Email Us" />');
+    $(paraTag).append('<input type="button" name="submit" id="submit" value="Email us" />');
 
     $('#main input#submit').click(function() {
         var name = $('input#name').val();

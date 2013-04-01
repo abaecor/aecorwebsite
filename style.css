@@ -188,6 +188,7 @@ a:hover{
 }
 .pad_icon .content{
 	width :140px !important;
+	margin-left: 21% !important;
 }
 #work1,#work2,#work3,#map1,#map2,#submit{
 	cursor:pointer;
