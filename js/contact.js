@@ -1,7 +1,7 @@
 $(function() {
     // These first three lines of code compensate for Javascript being turned on and off. 
     // It simply changes the submit input field from a type of "submit" to a type of "button".
-
+    var cnt = 1 ;
     var paraTag = $('input#submit').parent('p');
 	
     $(paraTag).children('input').remove();

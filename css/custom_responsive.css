@@ -1,8 +1,6 @@
 @media only screen and (min-width: 1600px){
             .pad_icon{
-                /*margin-left: 31% !important;*/
-               margin-left: 31% !important;	
-			 -webkit-margin-left: 31% !important;
+                margin-left: 31% !important;
             }
             .span9{
                 right: -26% !important;
@@ -13,53 +11,39 @@
             #help .iconset, #about .iconset{
                 margin-left: 13%;
             }
-			 #help .iconset, #about .iconset .span4 .services .serv_icon img{
-                height: 120px;
-            }
             #home a.btn{
-                margin-bottom: 1.5em;
-                margin-top: 1.5em;
+                margin-bottom: 2%;
+                margin-top: 2%;
             }
             #work .container{
-                background: url("../images/work-bg.jpg") no-repeat scroll 0 0 transparent;
+                background: url("../images/rb2.png") no-repeat scroll 0 0 transparent;
                 color: white;
                 margin-bottom: 5%;
             }
 }
 @media only screen and (min-width: 1000px){
-			
             #work .container{
-                background: url("../images/work-bg.jpg") no-repeat scroll 0 0 transparent;
+                background: url("../images/rb2.png") no-repeat scroll 0 0 transparent;
                 color: white;
                 margin-bottom: 5%;
             }
             #home a.btn{
-                margin-bottom: 1.5em;
-                margin-top: 1.5em;
+                margin-bottom: 4%;
+                margin-top: 4%;
             }
             .banner_nav{
                 padding-right:20px; 
                 padding-left:20px;
-				 font-family: 'HelveticaMed', Open Sans;
-				font-size: 1.2em
             }
             #home .title {
-                font-size: 1.7em;
-				position: relative;
-				top: 1.2em;
+                font-size: 25px;
                 font-weight: 100;
-			  font-family: 'HelveticaMed', Open Sans;
             }
             #home .content {
-               font-size: 1.7em;
-				position: relative;
-				top: 0.5em;
-                font-weight: 100;
-			  font-family: 'HelveticaMed', Open Sans;
+                font-size: 22px;
             }
             #contact-form{
-/*             margin-left: 96%;*/
-			 float: left;
+             margin-left: 17%;
             }
             .span9 {
                 position: relative;
@@ -78,7 +62,6 @@
             }
             article{
             width: 100% !important;
-			margin-left: 0%;
             }
             .span12{
             width : 97%;
@@ -92,24 +75,9 @@
             #help .iconset, #about .iconset{
                 margin-left: 12%;
             }
-			#help .iconset .span4 .services .serv_icon img{
-                height: 120px;
-            }
             #work .container{
             width: 100%;
             	background-size: cover;
-            }
-			/* .pad_icon{
-                
-               margin-left: 28%;	
-						
-            }*/
-			   .pad_icon{
-                /*margin-left: 31% !important;*/
-               margin-left: 20% ;	
-			 -webkit-margin-left: 20% ;
-			 -ms-margin-left: 20%;
-			 
             }
                 #contact{
                     margin-top: 17%;
@@ -125,52 +93,20 @@
                 padding-bottom: 40px;
                 padding-top: 40px;
                 font-size: 120px;
-				 font-family: 'HelveticaBold', Open sans;
-				 text-shadow: 0 -1px 1px #000000;
-		        filter: dropshadow(color=#000000, offx=0, offy=-1);
+                font-weight: 500;
             }
             .span12 .btn{
-                 margin-bottom: 6px;
-                 width: 26%;
-				 padding: 0 8px;
+                 margin-bottom: 10px;
+                 width: 22%;
             }
-			
 
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1200px){
-	 .pad_icon{
-                /*margin-left: 31% !important;*/
-               margin-left: 25% ;	
-			 -webkit-margin-left: 25% ;
-			 -ms-margin-left: 25%;
-			 
-            }
-}
-@media only screen and (min-width: 1000px) and (max-width: 1100px){
-	 .pad_icon{
-                /*margin-left: 31% !important;*/
-               margin-left: 22% ;	
-			 -webkit-margin-left: 22%;
-			 -ms-margin-left: 22%;
-			 
-            }
-}
-@media only screen and (min-width: 768px) and (max-width: 1000px){
-	 .pad_icon{
-                /*margin-left: 31% !important;*/
-               margin-left: 18% ;	
-			 -webkit-margin-left: 18% ;
-			 -ms-margin-left: 18%;
-			 
-            }
 }
 /* Width of 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
     
             #home a.btn{
-                margin-bottom: 0%;
+                margin-bottom: 4%;
                 margin-top: 4%;
             }
             .banner_nav{
@@ -188,9 +124,7 @@
              margin-left: 17%;
             }
             .address1 ,.address2{
-            	text-align: center;
-				margin-left: 87%;
-				width: 300px;
+            	text-align:left;
             }
             .span9 {
                 position: relative;
@@ -208,14 +142,6 @@
             width: 100%;
             	background-size: cover;
             }
-			
-				.pad_icon{
-                /*margin-left: 31% !important;*/
-               margin-left: 18%;	
-			 -webkit-margin-left: 18%;
-			 -ms-margin-left: 18%;
-            }
-               
                   article{
             width: 100%!important;
             }
@@ -241,7 +167,6 @@
             }
             .pad_icon{
             	 margin-left: 14% !important;
-				 -webkit-margin-left: 14% !important;
                 position: relative;
                 top: 32px;
             }
@@ -311,12 +236,17 @@
                     margin-top: 10%;
                 }
                 .address1,.address2{
-                   /* background: #232323;*/
-				   margin-left: 41% !important;
-				   margin-top: 10%;
-                    color: #333333;
+                    background: #232323;
+                    color: white;
                 }
-         
+            .pad_icon {
+                margin-left: 14% !important;
+                position: relative;
+                top: 32px;
+            }
+            .pad_icon .span4 {
+            	height: 40%!important;
+            }
             .container {
             padding:20px;
             }
@@ -379,17 +309,13 @@
 
             #options li {
                 display: block;
-				-webkit-display: block;
                 text-align: center;
-				-webkit-text-align: center;
             }
 
 
             #options li a {
                 display: block;
                 text-align: center !important;
-				-webkit-display: block;
-                -webkit-text-align: center !important;
             }
 
 }
@@ -397,6 +323,8 @@
 /*=========  mobile ends here   ==========*/
 
 /* =================*/
+
+
  @media only screen and (min-width: 480px) and (max-width: 767px) {
                  nav select {
                 margin-top: 2px;
@@ -406,10 +334,8 @@
                 }
 
                 .address1,.address2{
-                   /* background: #232323;*/
-   				   margin-left: 30% !important;
-   				   margin-top: 10% !important;				   
-                    color: #333333;
+                    background: #232323;
+                    color: white;
                 }
              	.pad_icon {
                 margin-left: 28% !important;
@@ -446,42 +372,12 @@
             }
             #options li {
                 display: block;
-				-webkit-display: block;
                 text-align: center;
-				-webkit-text-align: center;
             }
 
 
             #options li a {
                 display: block;
-                -webkit-display: block;				
                 text-align: center !important;
-				-webkit-text-align: center !important;
             }
-			/* contact */
-			#contact .span9 .addr .span4 .address1 {
-				width: 100%;
-				text-align: center;
-			}
-}
-/*@media screen and (-webkit-min-device-pixel-ratio:0) {
-	 #options li {
-                display: block;
-				-webkit-display: block !important;
-                text-align: center;
-				-webkit-text-align: center !important;
-            }
-
-
-            #options li a {
-                display: block;
-                -webkit-display: block !important;				
-                text-align: center !important;
-				-webkit-text-align: center !important;
-            }
-}*/
-/* go to top button */
-a.go-to-top {
-right: 15px;
-bottom: 120px;
 }
