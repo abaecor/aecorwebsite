@@ -68,57 +68,56 @@ return false;
 
 });
 
+var val_cnt = 'false';
 $('#submit').click(function(){
 		var nameReg = /^[a-zA-Z]+$/;
 		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 		var name = $('#name').val();
 		var email =  $('#email').val();
-		cnt =1;
 		if($('#name').val() == ''){
 			$('#name').css('border','1px solid red');
-			cnt = 0;
 			return false;
 		} else if($('#email').val() == ''){
 			$('#email').css('border','1px solid red');
-			cnt = 0;
 			return false;
 		}
 		else{
-			if($('#name').val() != ''){
 				if(!nameReg.test(name)){
 					$('#name').css('border','1px solid red');
-					cnt = 0;
 					return false;
 				} else {
 					$('#name').css('border','1px solid #D8D8D8');
+					val_cnt = 'true';
 				}	
-			} else if($('#email').val() != ''){
 				if(!emailReg.test(email)){
 					$('#email').css('border','1px solid red');
-					cnt = 0;
 					return false;
 				} else {
 					$('#email').css('border','1px solid #D8D8D8');
+					val_cnt= 'true';
 				}
-			}
 		}
-		if(cnt){
-			data="name=" + name+ "&email=" + email+ "&subject="+ $('#subject').val()+ "&message=" + $('#message').val();
-			alert(data);
+		if(val_cnt == 'true'){
+			data="name=" + name+ "&email=" + email+ "&subject="+ $('#subject').val()+ "&message=" + $('#message').val()+ "&captcha=" + $('#6_letters_code').val();
 				$.ajax({                   
 				url: 'sendEmail.php',
 				data: data,
 				dataType: "html",
 				type:'post',
 				success:function(response){
-					
+					if(response == false){
+						$('#6_letters_code').css('border','1px solid red');
+					} else {
+						alert('Your mail has been sent successfully.');
+						$('#6_letters_code').css('border','1px solid #D8D8D8');
+					}
 				},
 				error:function(response){
 					
 				}
 				
 			});
-		}
+		} 
 		
 });
 
