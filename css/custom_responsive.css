@@ -234,6 +234,9 @@
 
 /* Mobile landscape width 320 */
 @media only screen and (max-width: 767px) {
+            body,h3,h1{
+                font-family: 'HelveticaMed', Open Sans!important;
+            }
             .banner_nav{
                         padding-right:5px; 
                         padding-left:5px;
@@ -276,6 +279,9 @@
             }
             .pad_icon .span4 {
             	height: 40%!important;
+            }
+            .pad_icon {
+                margin-top: 27%;
             }
             .container {
             padding:20px;
@@ -329,6 +335,11 @@
                 height: 30px;
                 padding: 8px 0;
                 line-height: 0px;
+                width: 150px;
+            }
+            .logo{
+                position: relative;
+                left: -50px;
             }
 
             /*portfolio*/
@@ -346,6 +357,9 @@
             #options li a {
                 display: block;
                 text-align: center !important;
+            }
+            #contact h1{
+                padding-top: 6%;
             }
 
 }
@@ -374,6 +388,9 @@
             }
             .pad_icon .span4 {
             	height: 40%!important;
+            }
+            .pad_icon {
+                margin-top: 27%;
             }
              .container {
             padding:20px;
@@ -404,7 +421,9 @@
                 display: block;
                 text-align: center;
             }
-
+            #contact h1{
+                padding-top: 6%;
+            }
 
             #options li a {
                 display: block;

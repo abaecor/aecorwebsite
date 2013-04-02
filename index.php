@@ -86,9 +86,9 @@
     <!--<div class='mid_head'></div>  !-->
     <div class="scrollvspace"></div> 
     <div class="span12">
-                <h1 class="responsive_text help-how">How We Can Help</span></h1>
+                <h1 class="responsive_text help-how">How we can help</span></h1>
                 <h3>We offer the whole kit and caboodle! From process review, flow charts and site</br>
-                    mapping - to design, coding and infrastructure. Wow! </h3>
+                    mapping - to design, coding and infrastructure.</h3>
         </div> 
     <div class="row iconset">
         <div class="span4">
@@ -224,7 +224,7 @@
 	        <img src="images/lip.png" alt="img" />
             <article class="content">
                 <span class="strip"></span>
-                <h4> Keep It Simple (Stupid!) </h4>
+                <h4> Keep it simple (Stupid!) </h4>
                 <p>Don't over complicate matters.<br/> Define the problem, <br/>set your goals and achieve them.</p>
             </article>
         </div>
@@ -433,7 +433,7 @@ function refreshCaptcha()
   </div>
  
 </div>
-<div id="backtotop"><a href="#"><img src="images/back_to_top_btn.png" border="0" alt="Go to TOP" /></a></div>
+<div id="backtotop"><a href="#"><img src="images/back_to_top_btn.png" border="0" alt="Go to TOP"/></a></div>
 <!-- back to top script -->
 
 <!-- include jQuery Library -->
