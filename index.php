@@ -417,7 +417,7 @@ function refreshCaptcha()
 <!-- Modal -->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-body">
-    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=9+Barley+Mow+Passage,+Chiswick,+London+W4+4PH,+United+Kingdom&amp;aq=&amp;sll=51.491925,-0.262041&amp;sspn=0.007255,0.01929&amp;ie=UTF8&amp;hq=&amp;hnear=9+Barley+Mow+Passage,+London+Borough+of+Hounslow,+London+W4,+United+Kingdom&amp;ll=51.491925,-0.262041&amp;spn=0.007255,0.01929&amp;t=m&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=9+Barley+Mow+Passage,+Chiswick,+London+W4+4PH,+United+Kingdom&amp;aq=&amp;sll=51.491925,-0.262041&amp;sspn=0.007255,0.01929&amp;ie=UTF8&amp;hq=&amp;hnear=9+Barley+Mow+Passage,+London+Borough+of+Hounslow,+London+W4,+United+Kingdom&amp;ll=51.491925,-0.262041&amp;spn=0.007255,0.01929&amp;t=m&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=""></iframe><br /><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=9+Barley+Mow+Passage,+Chiswick,+London+W4+4PH,+United+Kingdom&amp;aq=&amp;sll=51.491925,-0.262041&amp;sspn=0.007255,0.01929&amp;ie=UTF8&amp;hq=&amp;hnear=9+Barley+Mow+Passage,+London+Borough+of+Hounslow,+London+W4,+United+Kingdom&amp;ll=51.491925,-0.262041&amp;spn=0.007255,0.01929&amp;t=m&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -426,7 +426,7 @@ function refreshCaptcha()
 
 <div id="myModalbaroda" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-body">
-    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=sayajigunj,+vadodara&amp;ie=UTF8&amp;hq=&amp;hnear=Sayajigunj,+Vadodara,+Gujarat&amp;ll=22.3092,73.1848&amp;spn=0.00539,0.009645&amp;t=m&amp;z=14&amp;vpsrc=6&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=+&amp;q=sayajigunj,+vadodara&amp;ie=UTF8&amp;hq=&amp;hnear=Sayajigunj,+Vadodara,+Gujarat&amp;ll=22.3092,73.1848&amp;spn=0.00539,0.009645&amp;t=m&amp;z=14&amp;vpsrc=6" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=sayajigunj,+vadodara&amp;ie=UTF8&amp;hq=&amp;hnear=Sayajigunj,+Vadodara,+Gujarat&amp;ll=22.3092,73.1848&amp;spn=0.00539,0.009645&amp;t=m&amp;z=14&amp;vpsrc=6&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=+&amp;q=sayajigunj,+vadodara&amp;ie=UTF8&amp;hq=&amp;hnear=Sayajigunj,+Vadodara,+Gujarat&amp;ll=22.3092,73.1848&amp;spn=0.00539,0.009645&amp;t=m&amp;z=14&amp;vpsrc=6" style="color:#0000FF;text-align:left">View Larger Map</a></small>
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -457,6 +457,20 @@ function refreshCaptcha()
             jQuery('html, body').animate({scrollTop:0}, scrollSpeed); 
             return false; 
         }); 
+
+
+        $('#map1').bind('click',function(){
+            $('#myModal').find('iframe').attr('src','http://maps.google.co.in/maps?f=q&source=s_q&hl=en&geocode=&q=9+Barley+Mow+Passage,+Chiswick,+London+W4+4PH,+United+Kingdom&aq=&sll=51.491925,-0.262041&sspn=0.007255,0.01929&ie=UTF8&hq=&hnear=9+Barley+Mow+Passage,+London+Borough+of+Hounslow,+London+W4,+United+Kingdom&ll=51.491925,-0.262041&spn=0.007255,0.01929&t=m&z=14&output=embed');
+            $('#myModal').modal('show');
+            return false;
+        });
+        /*
+        $('#map2').bind('click',function(){
+            $('#myModalbaroda').find('iframe').attr('src','http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=sayajigunj,+vadodara&amp;ie=UTF8&amp;hq=&amp;hnear=Sayajigunj,+Vadodara,+Gujarat&amp;ll=22.3092,73.1848&amp;spn=0.00539,0.009645&amp;t=m&amp;z=14&amp;vpsrc=6&amp;output=embed');
+            $('#myModalbaroda').modal('show');
+            return false;
+        });
+        */
     });
 </script>
 <!-- lightbox end -->
