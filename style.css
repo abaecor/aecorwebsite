@@ -429,4 +429,7 @@ color: #333;
 #work .pad_icon{
 	margin-left: 27%;
 }
+body,h3,h1{
+    font-family: 'HelveticaMed', Open Sans!important;
+}
 /* changes by mittal end */
