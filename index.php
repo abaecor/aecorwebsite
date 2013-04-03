@@ -1,4 +1,5 @@
 <?php session_start();?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
@@ -64,7 +65,8 @@
                 <br/>
                 <span class='content'>
                     If the &lsquo;sea&rsquo; is the powerful and dynamic world of digital technology, then the &lsquo;smooth&rsquo;<br/>
-                    and &lsquo;level&rsquo; surface of that world... well that place would be us.
+                    and &lsquo;level&rsquo; surface of that world... well, that place is where we operate. We will help you understand<br/>
+                    the importance of having an online presence and realise the true digital potential of your business.
                 </span>
                 <br/>
             </h3>
@@ -110,7 +112,7 @@
 	            <a href="#"><span class="serv_icon"><img src="images/icon6.png" alt="img" /></span></a>
                 <article class="content">
                     <span class="strip"></span>
-                    <h4>Web Development</h4>
+                    <h4>Web development</h4>
                     <p>PHP, cakePHP, Zend, MVC frame-<br/>
                         works, CMS, MySQL,WordPress, <br/>
                         Drupal, APIs, Facebook / Twitter <br/>
@@ -124,7 +126,7 @@
                 <a href="#"><span class="serv_icon"><img src="images/icon3.png" alt="img" /></span></a>
                 <article class="content">
                     <span class="strip"></span>
-                    <h4>Mobile Web &amp; Apps</h4>
+                    <h4>Mobile web &amp; apps</h4>
                     <p>iOS, Android, Phonegap, HTML5,<br/>
                         jQuery Mobile, Bootstrap, XML,<br/>
                         JSON, APIs.<br/>
@@ -139,8 +141,8 @@
                 <a href="#"><span class="serv_icon"><img src="images/icon4.png" alt="img" /></span></a>
                 <article class="content">
                     <span class="strip"></span>
-                    <h4>Digital Strategy</h4>
-                    <p>Social media, Analytics, user<br/>
+                    <h4>Digital strategy</h4>
+                    <p>Social media, analytics, user<br/>
                         conversion, KPIs, blogging, goals,<br/>
                         objectives, helping you unlock and<br/>
                         realise your potential.<br/>
@@ -153,7 +155,7 @@
                 <a href="#"><span class="serv_icon"><img src="images/icon5.png" alt="img" /></span></a>
                 <article class="content">
                     <span class="strip"></span>
-                    <h4>Hosting &amp; Infrastructure</h4>
+                    <h4>Hosting &amp; infrastructure</h4>
                     <p>Cloud, migration, sys admin,<br/>
                         network monitoring, AWS<br/>
                         Cloudwatch, Rackspace, Apache,<br/>
@@ -179,30 +181,6 @@
 </article>
 </section> 
 <!-- Services End -->
-<!-- Portfolio Start -->
-<section id="meettheteam" class="page">
-<img src='images/ds2.png' width='100%'/ style="height: 75px;">
-<article class="container">
-    <div class="row">
-        <div class="span12">
-            <h1 class="responsive_text help-how">Meet the team</span></h1>
-            <img id='grp' src='images/group1.png' width='100%'/>
-            <div class='div1'></div>
-            <div class="div2"></div>
-            <div class="div3"></div>
-            <div class="div4" onmouseout="document.getElementById('grp').src='images/group1.png';" onmouseover="document.getElementById('grp').src='images/grouphover.png'"></div>
-            <div class="div5"></div>
-            <div class="div6"></div>
-        </div>
-        <div class='mobile_layout'>
-            <h1 class="responsive_text">Meet The Team</span></h1>
-            <img src='images/johan.jpg' width='100%'/>
-        </div>
-    </div>
-</article>
-</section>
-<!-- Portfolio End -->
-
 
 <!-- About Start -->
 <section id="about" class="page">
@@ -224,7 +202,7 @@
 	        <img src="images/lip.png" alt="img" />
             <article class="content">
                 <span class="strip"></span>
-                <h4> Keep it simple (Stupid!) </h4>
+                <h4> Keep it simple (stupid!) </h4>
                 <p>Don't over complicate matters.<br/> Define the problem, <br/>set your goals and achieve them.</p>
             </article>
         </div>
@@ -251,6 +229,30 @@
 </section>
 <!-- About End -->
 
+<!-- Portfolio Start -->
+<section id="meettheteam" class="page">
+<img src='images/ds2.png' width='100%'/ style="height: 75px;">
+<article class="container">
+    <div class="row">
+        <div class="span12">
+            <h1 class="responsive_text help-how">Meet the team</span></h1>
+            <img id='grp' src='images/group1.png' width='100%'/>
+            <div class='div1'></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+            <div class="div4" onmouseout="document.getElementById('grp').src='images/group1.png';" onmouseover="document.getElementById('grp').src='images/grouphover.png'"></div>
+            <div class="div5"></div>
+            <div class="div6"></div>
+        </div>
+        <div class='mobile_layout'>
+            <h1 class="responsive_text">Meet The Team</span></h1>
+            <img src='images/johan.jpg' width='100%'/>
+        </div>
+    </div>
+</article>
+</section>
+<!-- Portfolio End -->
+
 <!-- Work Start -->
 <section id="work" class="page">
     <div class="scrollvspace"></div>
@@ -259,8 +261,9 @@
         <div class="span12">
             <div class="sub_header">
                 <h1 class="responsive_text work-txt">Work</h2>
-                <h3 class='work-subtxt'>It's not all about design and making your website look nice. Check out
-                    <br/>some of the case studies below to see how we helped these customers. </h3>
+                <h3 class='work-subtxt'>
+                It's not all about design and making your website look nice (although that’s a good start!).<br/>
+                Click on the case studies below to see how we helped these customers.</h3>
             </div>
         </div>
     </div>
@@ -271,9 +274,9 @@
                 <span class="strip"></span>
                 <h4> Club website </h4>
                 <p>
-                    Digital strategy, Infrastructure,</br>
-                    Web development, Mobile &amp;</br>
-                    Social media.</br>
+                    Digital strategy, infrastructure,</br>
+                    web development, mobile &amp;</br>
+                    social media.</br>
                 </p>
             </article>
         </div>
@@ -282,8 +285,8 @@
             <article class="content">
                 <span class="strip"></span>
                 <h4>Powerleague</h4>
-                <p>Digital strategy, Legacy<br/>
-                    migration, Design &amp; Web<br/>
+                <p>Digital strategy, legacy<br/>
+                    migration, design &amp; web<br/>
                     development. </p>
             </article>
         </div>
@@ -291,11 +294,11 @@
             <img id='work3' src="images/pad3.png" alt="img" onmouseout="document.getElementById('work3').src='images/pad3.png';" onmouseover="document.getElementById('work3').src='images/pad3_hov.png'"/>
             <article class="content">
                 <span class="strip"></span>
-                <h4>Greenworld Holidays</h4>
+                <h4>Greenworld holidays</h4>
                 <p>
-                    Design, Web development,<br/>
-                    Infrastructure, Outsourcing &amp;<br/>
-                    Mobile. 
+                    Design, web development,<br/>
+                    infrastructure, outsourcing &amp;<br/>
+                    mobile. 
                 </p>
             </article>
         </div>
@@ -407,13 +410,7 @@ frmvalidator.addValidation("name","req","Please provide your name");
 frmvalidator.addValidation("email","req","Please provide your email"); 
 frmvalidator.addValidation("email","email","Please enter a valid email address"); 
 </script>
-<script language='JavaScript' type='text/javascript'>
-function refreshCaptcha()
-{
-    var img = document.images['captchaimg'];
-    img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
-}
-</script>
+
 <!-- Modal -->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-body">
@@ -426,7 +423,7 @@ function refreshCaptcha()
 
 <div id="myModalbaroda" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-body">
-    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=sayajigunj,+vadodara&amp;ie=UTF8&amp;hq=&amp;hnear=Sayajigunj,+Vadodara,+Gujarat&amp;ll=22.3092,73.1848&amp;spn=0.00539,0.009645&amp;t=m&amp;z=14&amp;vpsrc=6&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=+&amp;q=sayajigunj,+vadodara&amp;ie=UTF8&amp;hq=&amp;hnear=Sayajigunj,+Vadodara,+Gujarat&amp;ll=22.3092,73.1848&amp;spn=0.00539,0.009645&amp;t=m&amp;z=14&amp;vpsrc=6" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=sayajigunj,+vadodara&amp;ie=UTF8&amp;hq=&amp;hnear=Sayajigunj,+Vadodara,+Gujarat&amp;ll=22.3092,73.1848&amp;spn=0.00539,0.009645&amp;t=m&amp;z=15&amp;vpsrc=6&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=+&amp;q=sayajigunj,+vadodara&amp;ie=UTF8&amp;hq=&amp;hnear=Sayajigunj,+Vadodara,+Gujarat&amp;ll=22.3092,73.1848&amp;spn=0.00539,0.009645&amp;t=m&amp;z=14&amp;vpsrc=6&amp;output=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -464,16 +461,23 @@ function refreshCaptcha()
             $('#myModal').modal('show');
             return false;
         });
-        /*
+        
         $('#map2').bind('click',function(){
-            $('#myModalbaroda').find('iframe').attr('src','http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=sayajigunj,+vadodara&amp;ie=UTF8&amp;hq=&amp;hnear=Sayajigunj,+Vadodara,+Gujarat&amp;ll=22.3092,73.1848&amp;spn=0.00539,0.009645&amp;t=m&amp;z=14&amp;vpsrc=6&amp;output=embed');
+            $('#myModalbaroda').find('iframe').attr('src','http://maps.google.co.in/maps?f=q&source=s_q&hl=en&geocode=&q=sayajigunj,+vadodara&ie=UTF8&hq=&hnear=Sayajigunj,+Vadodara,+Gujarat&ll=22.3092,73.1848&spn=0.00539,0.009645&t=m&z=14&vpsrc=6&output=embed');
             $('#myModalbaroda').modal('show');
             return false;
         });
-        */
+        
     });
 </script>
 <!-- lightbox end -->
+<script language='JavaScript' type='text/javascript'>
+function refreshCaptcha()
+{
+    var img = document.images['captchaimg'];
+    img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
+}
+</script>
 </body>
 </html>
 
