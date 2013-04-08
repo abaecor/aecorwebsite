@@ -8,43 +8,67 @@ $(function() {
     $(paraTag).append('<input type="button" name="submit" id="submit" value="Email us" />');
 
     $('#main input#submit').click(function() {
-        var name = $('input#name').val();
-        var email = $('input#email').val();
-        var message = $('textarea#message').val();
-		  var pattern = new RegExp(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/);
-		 var subject = $('input#subject').val();
+    	alert('here1');
+        var name = $.trim($('input#name').val());
+        alert('here2');
+        var email = $.trim($('input#email').val());
+        alert('here3');
+        var message = $.trim($('textarea#message').val());
+        alert('here4');
+		var mailpattern = new RegExp(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/);
+		alert('here5');
+		var subject = $.trim($('input#subject').val());
+		alert('here6');
+		var error = false;
+		
 		 if(name=='')
 		 {
 			 $('[name="name"]').addClass('vaidate_error');
+			 $('#contact_form .name').show();
+			 error = (error && true);
 		 }else{
 			 $('[name="name"]').removeClass('vaidate_error');
-			 }
+			 $('#contact_form .name').hide();
+		}
 			 
-			  if(email=='')
-		 {
+		if(email=='')
+		{
 			 $('[name="email"]').addClass('vaidate_error');
-		 }else{
-			if (!pattern.test(email)) {
+			 $('#contact_form .email').show();
+			 error = (error && true);
+		}else{
+			if (!mailpattern.test(email)) {
 				 $('[name="email"]').addClass('vaidate_error');
-			 }else{
+				 $('#contact_form .email').show();
+				 error = (error && true);
+			}else{
 				 $('[name="email"]').removeClass('vaidate_error');
-				 }
-			 }
+				 $('#contact_form .email').hide();
+			}
+		}
 			 
 				 
-			if(message=="")
-					 {
-						 $('[name="message"]').addClass('vaidate_error');
-					 }else{
-						 $('[name="message"]').removeClass('vaidate_error');
-						 }
-			if(subject=="")
-					 {
-						 $('[name="subject"]').addClass('vaidate_error');
-					 }else{
-						 $('[name="subject"]').removeClass('vaidate_error');
-						 }
-
+		if(message=="")
+		{
+			 $('[name="message"]').addClass('vaidate_error');
+			 $('#contact_form .message').show();
+			 error = (error && true);
+		}else{
+			 $('[name="message"]').removeClass('vaidate_error');
+			 $('#contact_form .message').hide();
+		}
+		if(subject=="")
+		{
+			 $('[name="subject"]').addClass('vaidate_error');
+			 $('#contact_form .subject').show();
+			 error = (error && true);
+		}else{
+			 $('[name="subject"]').removeClass('vaidate_error');
+			 $('#contact_form .subject').hide();
+		}
+		if(error){
+			return false;
+		}
         $.ajax({
             type: 'post',
             url: 'sendEmail.php',

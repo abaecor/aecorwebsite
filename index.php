@@ -338,24 +338,39 @@
                     <div id="main">
                     <div class="span4 left">
                         <label>Name:</label>
-                        <p><input required='required' type="text" name="name" id="name" size="30" /></p>
+                        <p>
+                        	<input required='required' type="text" name="name" id="name" size="30" />
+                        	<label class="error name">Please enter name</label>
+                        </p>
                     </div>
                     <div class="span4">
                         <label>Email:</label>
-                        <p><input required='required' type="text" name="email" id="email" size="30" /></p>
+                        <p>
+                        	<input required='required' type="text" name="email" id="email" size="30" />
+                        	<label class="error email">Please enter valid email</label>
+                        </p>
                     </div>
                     <div class="span4">
                         <label>Subject:</label>
-                        <p><input required='required' type="text" name="subject" id="subject" size="30" /></p>
+                        <p>
+                        	<input required='required' type="text" name="subject" id="subject" size="30" />
+                        	<label class="error subject">Please enter subject</label>
+                        </p>
                     </div>
                     <div class="span4" style="clear: both;">
                         <label>Message:</label>
-                        <p><textarea name="message" id="message" cols="30" rows="5"></textarea></p>
+                        <p>
+                        	<textarea name="message" id="message" cols="30" rows="5"></textarea>
+                        	<label class="error message">Please enter message</label>
+                        </p>
                         
-                        <img src="captcha_code_file.php?rand=<?php echo rand(); ?>" id='captchaimg' ><br>
+                        <div class="captchaimage">
+                        	<img src="captcha_code_file.php?width=100&height=40&characters=6" id='captchaimg' >
+                        </div>
                         <label for='message'>Enter the code above here:</label>
                         <input id="6_letters_code" name="6_letters_code" type="text"><br>
-                        <input type='hidden' id='session_captcha' value='<?php echo $_SESSION["6_letters_code"]?>'/>
+                        <input type='hidden' id='session_captcha' value='<?php echo $_SESSION["security_code"]?>'/>
+                        <label class="error 6_letters_code">Please enter valid captcha</label>
                         <small>Can't read the image? click <a class='link' href='javascript: refreshCaptcha();'>here</a> to refresh</small>
                         </p>
 
@@ -433,8 +448,6 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
 <div id="backtotop"><a href="#"><img src="images/back_to_top_btn.png" border="0" alt="Go to TOP"/></a></div>
 <!-- back to top script -->
 
-<!-- include jQuery Library -->
-<script type="text/javascript" src="js/jquery.js"></script>
 <!-- efforless script below -->
 <script type="text/javascript">
     jQuery(document).ready(function(){
@@ -475,7 +488,7 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
 function refreshCaptcha()
 {
     var img = document.images['captchaimg'];
-    img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
+    img.src = "captcha_code_file.php?width=100&height=40&characters=6&rand="+Math.random()*1000;
 }
 </script>
 </body>

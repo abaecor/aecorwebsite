@@ -433,3 +433,17 @@ body,h3,h1{
     font-family: 'HelveticaMed', Open Sans!important;
 }
 /* changes by mittal end */
+.contact_form label{
+	color:#444;
+}
+.contact_form textarea, .contact_form input[type="text"]{
+	background-color:#444;
+	color:#FFF;
+}
+.contact_form .captchaimage{
+	text-align:left;
+}
+.contact_form .error{
+	color:red;
+	display:none;
+}

@@ -1,3 +1,6 @@
+jQuery.fn.reset = function () {
+  $(this).each (function() { this.reset(); });
+}
 //Portfolio Isotope Document
 jQuery(document).ready(function(){
 	$('#sub_nav a').each(function(){
@@ -68,48 +71,66 @@ return false;
 
 });
 
-var val_cnt = 'false';
+
+function checkVal(field,pattern){
+	var error;
+	var fieldVal = $.trim($('#'+field).val());
+	if(fieldVal==''){
+		error = true;
+	}
+	if(typeof pattern!='undefined'){
+		if(!pattern.test(fieldVal)){
+			error = true;
+		}
+	}
+	if(error){
+		$('#'+field).css('border','1px solid red');
+		$('#contact_form .'+field).show();
+		return false;
+	}else{
+		$('#'+field).css('border','1px solid #D8D8D8');
+		$('#contact_form .'+field).hide();
+		return true;
+	}
+	
+}
 $('#submit').click(function(){
 		var nameReg = /^[a-zA-Z]+$/;
 		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-		var name = $('#name').val();
-		var email =  $('#email').val();
-		if($('#name').val() == ''){
-			$('#name').css('border','1px solid red');
-			return false;
-		} else if($('#email').val() == ''){
-			$('#email').css('border','1px solid red');
-			return false;
-		}
-		else{
-				if(!nameReg.test(name)){
-					$('#name').css('border','1px solid red');
-					return false;
-				} else {
-					$('#name').css('border','1px solid #D8D8D8');
-					val_cnt = 'true';
-				}	
-				if(!emailReg.test(email)){
-					$('#email').css('border','1px solid red');
-					return false;
-				} else {
-					$('#email').css('border','1px solid #D8D8D8');
-					val_cnt= 'true';
-				}
-		}
-		if(val_cnt == 'true'){
-			data="name=" + name+ "&email=" + email+ "&subject="+ $('#subject').val()+ "&message=" + $('#message').val()+ "&captcha=" + $('#6_letters_code').val();
+		var name = checkVal('name',nameReg);
+		var email =  checkVal('email',emailReg);
+		var subject = checkVal('subject');
+		var message = checkVal('message');
+		var captcha = checkVal('6_letters_code');
+		var noerror = true;
+		
+		noerror = (noerror && name);
+		noerror = (noerror && email);
+		noerror = (noerror && subject);
+		noerror = (noerror && message);
+		if(noerror){
+			 	name = $.trim($('#name').val());
+				email =  $.trim($('#email').val());
+				subject = $.trim($('#subject').val());
+				message = $.trim($('#message').val());
+				
+				data="name=" + name+ "&email=" + email+ "&subject="+ $('#subject').val()+ "&message=" + $('#message').val()+ "&captcha=" + $('#6_letters_code').val();
 				$.ajax({                   
 				url: 'sendEmail.php',
 				data: data,
 				dataType: "html",
 				type:'post',
 				success:function(response){
-					if(response == false){
+					if(response == 'wrong_captcha'){
 						$('#6_letters_code').css('border','1px solid red');
-					} else {
+						$('.6_letters_code').show();
+					} else if(response == 'failure') {
+						alert('There was some problem sending your email. Please try again.');
+					}else{
 						alert('Your mail has been sent successfully.');
 						$('#6_letters_code').css('border','1px solid #D8D8D8');
+						$('#contact_form').reset();
+						refreshCaptcha();
 					}
 				},
 				error:function(response){

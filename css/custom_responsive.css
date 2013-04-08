@@ -240,7 +240,11 @@
 
 /* Mobile landscape width 320 */
 @media only screen and (max-width: 767px) {
+			.bottom{
+				display:none!important;
+			}
             .banner_nav{
+            			color:red;
                         padding-right:5px; 
                         padding-left:5px;
                     }
