@@ -240,6 +240,12 @@
 
 /* Mobile landscape width 320 */
 @media only screen and (max-width: 767px) {
+            #home h3 .content{
+                font-size: 10px;   
+            }
+            section{
+                min-height: 440px;
+            }
 			.bottom{
 				display:none!important;
 			}

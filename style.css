@@ -33,7 +33,7 @@
 
 /* fonts end */
 section{
-	min-height: 600px;
+	min-height: 768px;
 }
 body{
 	  font-family: Helvetica Neue !important;
@@ -437,7 +437,7 @@ body,h3,h1{
 	color:#444;
 }
 .contact_form textarea, .contact_form input[type="text"]{
-	background-color:#444;
+	background-color:#888;
 	color:#FFF;
 }
 .contact_form .captchaimage{
@@ -446,4 +446,10 @@ body,h3,h1{
 .contact_form .error{
 	color:red;
 	display:none;
+}
+#contact_form #main .span4:last-child small{
+	float:left;
+}
+#contact_form #main #submit{
+	margin-top: 15px;
 }

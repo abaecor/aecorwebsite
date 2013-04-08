@@ -43,7 +43,7 @@
             <ul class="main-navi">
                 <li><a href="#help" title="help">How we can help</a></li>
                 <li><a href="#about" title="about">About us</a></li>
-                <li><a href="#meettheteam" title="meettheteam">Meet the team</a></li>
+                <!--<li><a href="#meettheteam" title="meettheteam">Meet the team</a></li>-->
                 <li><a href="#work" title="work">Work</a></li>
                 <li><a class="responsive_text" href="#contact" title="contact">Contact us</a></li>
             </ul>
@@ -73,7 +73,7 @@
             <div class='bottom'>
                 <a class='btn banner-btn' href='#help'> How we can help</a><br/>
                 <a class='banner_nav' href="#about" title="about">About us </a> |
-                <a class='banner_nav' href="#meettheteam" title="meettheteam">Meet the team </a> |
+                <!--<a class='banner_nav' href="#meettheteam" title="meettheteam">Meet the team </a> |-->
                 <a class='banner_nav' href="#work" title="work">Work </a> |
                 <a class='banner_nav' href="#contact" title="contact">Contact us </a>
             </div>
@@ -229,7 +229,7 @@
 </section>
 <!-- About End -->
 
-<!-- Portfolio Start -->
+<!-- Meet the team Start 
 <section id="meettheteam" class="page">
 <img src='images/ds2.png' width='100%'/ style="height: 75px;">
 <article class="container">
@@ -251,7 +251,7 @@
     </div>
 </article>
 </section>
-<!-- Portfolio End -->
+<!-- Meet the team End -->
 
 <!-- Work Start -->
 <section id="work" class="page">
@@ -272,7 +272,7 @@
             <img id='work1' src="images/pad1.png" alt="img" onmouseout="document.getElementById('work1').src='images/pad1.png';" onmouseover="document.getElementById('work1').src='images/pad1_hov.png'"/>
             <article class="content">
                 <span class="strip"></span>
-                <h4> Club website </h4>
+                <h4> Club Website </h4>
                 <p>
                     Digital strategy, infrastructure,</br>
                     web development, mobile &amp;</br>
@@ -294,7 +294,7 @@
             <img id='work3' src="images/pad3.png" alt="img" onmouseout="document.getElementById('work3').src='images/pad3.png';" onmouseover="document.getElementById('work3').src='images/pad3_hov.png'"/>
             <article class="content">
                 <span class="strip"></span>
-                <h4>Greenworld holidays</h4>
+                <h4>Greenworld Holidays</h4>
                 <p>
                     Design, web development,<br/>
                     infrastructure, outsourcing &amp;<br/>
@@ -371,7 +371,7 @@
                         <input id="6_letters_code" name="6_letters_code" type="text"><br>
                         <input type='hidden' id='session_captcha' value='<?php echo $_SESSION["security_code"]?>'/>
                         <label class="error 6_letters_code">Please enter valid captcha</label>
-                        <small>Can't read the image? click <a class='link' href='javascript: refreshCaptcha();'>here</a> to refresh</small>
+                        <small>Can't read the image? Click <a class='link' href='javascript: refreshCaptcha();'>here</a> to refresh</small>
                         </p>
 
                         <p><input class="contact_button button" type='button' name="submit" id="submit" value="Email us!" /></p>
@@ -444,6 +444,18 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
     <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
   </div>
  
+</div>
+<div id='Mailsuccess' class='modal hide fade' tabindex="-1" role="dialog" aria-labelledby="Mailsuccess" aria-hidden="true">
+    <div class='modal-body'>Your mail has been sent successfully.</div>
+    <div class='modal-footer'>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+<div id='Mailnosuccess' class='modal hide fade' tabindex="-1" role="dialog" aria-labelledby="Mailnosuccess" aria-hidden="true">
+    <div class='modal-body'>There was some problem sending your email. Please try again.</div>
+    <div class='modal-footer'>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
 </div>
 <div id="backtotop"><a href="#"><img src="images/back_to_top_btn.png" border="0" alt="Go to TOP"/></a></div>
 <!-- back to top script -->

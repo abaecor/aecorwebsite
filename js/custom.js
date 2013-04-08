@@ -125,9 +125,9 @@ $('#submit').click(function(){
 						$('#6_letters_code').css('border','1px solid red');
 						$('.6_letters_code').show();
 					} else if(response == 'failure') {
-						alert('There was some problem sending your email. Please try again.');
+						$('#Mailnosuccess').modal('show');
 					}else{
-						alert('Your mail has been sent successfully.');
+						$('#Mailsuccess').modal('show');
 						$('#6_letters_code').css('border','1px solid #D8D8D8');
 						$('#contact_form').reset();
 						refreshCaptcha();
